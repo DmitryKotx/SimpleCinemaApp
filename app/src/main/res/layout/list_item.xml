@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/filmCard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/posterWrapper"
+            android:layout_width="50dp"
+            android:layout_height="79dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/listImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/filmCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="10dp"
+            android:maxWidth="170sp"
+            android:text="Movie Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/posterWrapper"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/genreCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="5sp"
+            android:text="Жанр (2003 г.)"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/posterWrapper"
+            app:layout_constraintTop_toBottomOf="@+id/filmCardName" />
+
+        <ImageView
+            android:id="@+id/cardFavouriteIcon"
+            android:visibility="invisible"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/baseline_star_24"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/favourite_icon_description" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

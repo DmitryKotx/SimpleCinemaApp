@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SimpleCinemaApp</string>
+
+    <string name="city_name">City Name</string>
+    <string name="send_request">Send Request</string>
+    <string name="loading">Loading…</string>
+    <string name="filmposter">filmPoster</string>
+    <string name="update">Повторить</string>
+    <string name="errorMessage">Произошла ошибка при загрузке данных, проверьте подключение к сети</string>
+    <string name="cloud_off_description">cloud_off</string>
+    <string name="popular_title">Популярные</string>
+    <string name="poster">Poster</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fav_title">Избранное</string>
+    <string name="empty_description">folder_off</string>
+    <string name="fav_empty_text">Избранное отсутствует. Нажмите и удерживайте карточку фильма!</string>
+    <string name="favourite_icon_description">favourite</string>
+    <string name="back_description">Back</string>
+    <string name="search_title">Поиск</string>
+    <string name="search_hint">Введите слово для поиска</string>
+    <string name="search_button">Поиск</string>
+</resources>
